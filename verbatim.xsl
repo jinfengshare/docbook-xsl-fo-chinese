@@ -117,6 +117,9 @@ xmlns:fo="http://www.w3.org/1999/XSL/Format"
                     (self::d:programlisting and
                     starts-with($writing.mode, 'rl'))">
       <fo:block-container start-indent="0pt" end-indent="0pt">
+      	<xsl:attribute name="border-style">solid</xsl:attribute>
+      	<xsl:attribute name="border-width">1pt</xsl:attribute>
+      	<xsl:attribute name="background-color">#F0F0F0</xsl:attribute>
         <xsl:if test="@width != ''">
           <xsl:attribute name="width">
             <xsl:value-of select="concat(@width, '*', $monospace.verbatim.font.width)"/>
