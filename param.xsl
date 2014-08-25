@@ -251,7 +251,7 @@ version="1.0">
   <xsl:attribute name="leader-length">1in</xsl:attribute>
 </xsl:attribute-set>
 <xsl:param name="fop.extensions" select="0"/>
-<xsl:param name="fop1.extensions" select="0"/>
+<xsl:param name="fop1.extensions" select="1"/>
 <xsl:param name="force.blank.pages" select="1"/>
 <xsl:attribute-set name="formal.object.properties">
   <xsl:attribute name="space-before.minimum">0.5em</xsl:attribute>
