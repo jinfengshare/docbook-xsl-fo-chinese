@@ -122,6 +122,7 @@ version="1.0">
 <xsl:param name="callout.unicode.start.character">10102</xsl:param>
 <xsl:param name="callouts.extension" select="1"/>
 <xsl:param name="chapter.autolabel" select="1"/>
+<xsl:param name="section.autolabel" select="1"/>
 <xsl:param name="chunk.quietly" select="0"/>
 <xsl:param name="collect.xref.targets">no</xsl:param>
 <xsl:param name="column.count.back" select="1"/>
@@ -644,19 +645,19 @@ set       toc,title
 <xsl:param name="qandadiv.autolabel" select="1"/>
 <xsl:attribute-set name="qanda.title.level1.properties">
   <xsl:attribute name="font-size">
-    <xsl:value-of select="$body.font.master * 2.0736"/>
+    <xsl:value-of select="$body.font.master * 1.8"/>
     <xsl:text>pt</xsl:text>
   </xsl:attribute>
 </xsl:attribute-set>
 <xsl:attribute-set name="qanda.title.level2.properties">
   <xsl:attribute name="font-size">
-    <xsl:value-of select="$body.font.master * 1.728"/>
+    <xsl:value-of select="$body.font.master * 1.6"/>
     <xsl:text>pt</xsl:text>
   </xsl:attribute>
 </xsl:attribute-set>
 <xsl:attribute-set name="qanda.title.level3.properties">
   <xsl:attribute name="font-size">
-    <xsl:value-of select="$body.font.master * 1.44"/>
+    <xsl:value-of select="$body.font.master * 1.4"/>
     <xsl:text>pt</xsl:text>
   </xsl:attribute>
 </xsl:attribute-set>
@@ -742,32 +743,32 @@ set       toc,title
 <xsl:param name="rootid"/>
 <xsl:param name="runinhead.default.title.end.punct">.</xsl:param>
 <xsl:param name="runinhead.title.end.punct">.!?:</xsl:param>
-<xsl:param name="sans.font.family">sans-serif</xsl:param>
-<xsl:param name="section.autolabel" select="0"/>
+<xsl:param name="sans.font.family">SimSun</xsl:param>
+<xsl:param name="section.autolabel" select="1"/>
 <xsl:param name="section.autolabel.max.depth">8</xsl:param>
 <xsl:param name="section.container.element">block</xsl:param>
 <xsl:param name="section.label.includes.component.label" select="0"/>
 <xsl:attribute-set name="section.title.level1.properties">
   <xsl:attribute name="font-size">
-    <xsl:value-of select="$body.font.master * 2.0736"/>
+    <xsl:value-of select="$body.font.master * 1.8"/>
     <xsl:text>pt</xsl:text>
   </xsl:attribute>
 </xsl:attribute-set>
 <xsl:attribute-set name="section.title.level2.properties">
   <xsl:attribute name="font-size">
-    <xsl:value-of select="$body.font.master * 1.728"/>
+    <xsl:value-of select="$body.font.master * 1.5"/>
     <xsl:text>pt</xsl:text>
   </xsl:attribute>
 </xsl:attribute-set>
 <xsl:attribute-set name="section.title.level3.properties">
   <xsl:attribute name="font-size">
-    <xsl:value-of select="$body.font.master * 1.44"/>
+    <xsl:value-of select="$body.font.master * 1.3"/>
     <xsl:text>pt</xsl:text>
   </xsl:attribute>
 </xsl:attribute-set>
 <xsl:attribute-set name="section.title.level4.properties">
   <xsl:attribute name="font-size">
-    <xsl:value-of select="$body.font.master * 1.2"/>
+    <xsl:value-of select="$body.font.master * 1.1"/>
     <xsl:text>pt</xsl:text>
   </xsl:attribute>
 </xsl:attribute-set>
