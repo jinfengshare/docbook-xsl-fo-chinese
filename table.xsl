@@ -1183,6 +1183,13 @@ xmlns:doc="http://nwalsh.com/xsl/documentation/1.0"
 
   <xsl:choose>
     <xsl:when test="ancestor::d:tgroup">
+    	
+    	<!-- new add begin -->
+      <xsl:if test="ancestor::d:thead">
+        <xsl:attribute name="background-color">#eee</xsl:attribute>
+      </xsl:if>
+      <!-- new add end -->
+      
       <xsl:if test="$bgcolor.pi != ''">
         <xsl:attribute name="background-color">
           <xsl:value-of select="$bgcolor.pi"/>
