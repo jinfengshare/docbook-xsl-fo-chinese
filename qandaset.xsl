@@ -260,6 +260,7 @@ xmlns:fo="http://www.w3.org/1999/XSL/Format"
   </xsl:variable>
 
   <fo:list-item id="{$entry.id}" xsl:use-attribute-sets="list.item.spacing">
+  	<xsl:attribute name="background-color">#F0F0F0</xsl:attribute>
     <fo:list-item-label id="{$id}" end-indent="label-end()">
         <xsl:if test="string-length($label.content) &gt; 0">
 			<fo:block font-weight="bold">
