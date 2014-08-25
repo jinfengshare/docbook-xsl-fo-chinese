@@ -82,7 +82,7 @@ version="1.0">
 <xsl:attribute name="space-after.optimum">1em</xsl:attribute>
 <xsl:attribute name="space-after.maximum">2em</xsl:attribute>
 </xsl:attribute-set>
-<xsl:param name="body.font.family">serif</xsl:param>
+<xsl:param name="body.font.family">Arial,SimSun</xsl:param>
 <xsl:param name="body.font.master">10</xsl:param>
 <xsl:param name="body.font.size">
  <xsl:value-of select="$body.font.master"/><xsl:text>pt</xsl:text>
@@ -174,7 +174,7 @@ version="1.0">
 <xsl:param name="default.table.frame">all</xsl:param>
 <xsl:param name="default.table.rules">none</xsl:param>
 <xsl:param name="default.units">pt</xsl:param>
-<xsl:param name="dingbat.font.family">serif</xsl:param>
+<xsl:param name="dingbat.font.family">SimSun</xsl:param>
 <xsl:param name="double.sided" select="0"/>
 <xsl:param name="draft.mode">no</xsl:param>
 <xsl:param name="draft.watermark.image">images/draft.png</xsl:param>
@@ -404,7 +404,7 @@ set       toc,title
   
 
 <xsl:param name="keep.relative.image.uris" select="0"/>
-<xsl:param name="l10n.gentext.default.language">en</xsl:param>
+<xsl:param name="l10n.gentext.default.language">zh_cn</xsl:param>
 <xsl:param name="l10n.gentext.language"/>
 <xsl:param name="l10n.gentext.use.xref.language" select="0"/>
 <xsl:param name="l10n.lang.value.rfc.compliant" select="1"/>
@@ -449,7 +449,7 @@ set       toc,title
 <xsl:param name="marker.section.level">2</xsl:param>
 <xsl:param name="menuchoice.menu.separator"> → </xsl:param>
 <xsl:param name="menuchoice.separator">+</xsl:param>
-<xsl:param name="monospace.font.family">monospace</xsl:param>
+<xsl:param name="monospace.font.family">Courier</xsl:param>
 <xsl:attribute-set name="monospace.properties">
   <xsl:attribute name="font-family">
     <xsl:value-of select="$monospace.font.family"/>
@@ -893,7 +893,7 @@ set       toc,title
 <xsl:param name="tex.math.delims" select="1"/>
 <xsl:param name="tex.math.in.alt"/>
   <xsl:param name="textinsert.extension" select="1"/>
-<xsl:param name="title.font.family">sans-serif</xsl:param>
+<xsl:param name="title.font.family">Arial,SimHei</xsl:param>
 <xsl:param name="title.margin.left">
   <xsl:choose>
     <xsl:when test="$fop.extensions != 0">-4pc</xsl:when>
