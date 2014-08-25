@@ -45,6 +45,7 @@ the location of this file.
       </filterList>
 
       <fonts>
+      	<auto-detect/>
         <!-- embedded fonts -->
         <!--
         This information must exactly match the font specified
