@@ -458,7 +458,7 @@ set       toc,title
 </xsl:attribute-set>
 <xsl:attribute-set name="monospace.verbatim.properties" use-attribute-sets="verbatim.properties monospace.properties">
   <xsl:attribute name="text-align">start</xsl:attribute>
-  <xsl:attribute name="wrap-option">no-wrap</xsl:attribute>
+  <xsl:attribute name="wrap-option">wrap</xsl:attribute>
 </xsl:attribute-set>
 <xsl:param name="monospace.verbatim.font.width">0.60em</xsl:param>
 <xsl:param name="nominal.table.width">6in</xsl:param>
@@ -943,7 +943,7 @@ set       toc,title
   <xsl:attribute name="space-after.optimum">1em</xsl:attribute>
   <xsl:attribute name="space-after.maximum">1.2em</xsl:attribute>
   <xsl:attribute name="hyphenate">false</xsl:attribute>
-  <xsl:attribute name="wrap-option">no-wrap</xsl:attribute>
+  <xsl:attribute name="wrap-option">wrap</xsl:attribute>
   <xsl:attribute name="white-space-collapse">false</xsl:attribute>
   <xsl:attribute name="white-space-treatment">preserve</xsl:attribute>
   <xsl:attribute name="linefeed-treatment">preserve</xsl:attribute>
