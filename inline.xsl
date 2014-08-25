@@ -237,6 +237,33 @@ xmlns:fo="http://www.w3.org/1999/XSL/Format"
   </xsl:param>
 
   <fo:inline font-weight="bold">
+  	<!--<fo:inline font-family="SimHei">-->
+    <xsl:if test="@dir">
+      <xsl:attribute name="direction">
+        <xsl:choose>
+          <xsl:when test="@dir = 'ltr' or @dir = 'lro'">ltr</xsl:when>
+          <xsl:otherwise>rtl</xsl:otherwise>
+        </xsl:choose>
+      </xsl:attribute>
+    </xsl:if>
+    <xsl:copy-of select="$content"/>
+  </fo:inline>
+</xsl:template>
+
+<xsl:template name="inline.cmdseq">
+  <xsl:param name="content">
+    <xsl:call-template name="simple.xlink">
+      <xsl:with-param name="content">
+        <xsl:apply-templates/>
+      </xsl:with-param>
+    </xsl:call-template>
+  </xsl:param>
+
+  <fo:inline font-family="Calibri"
+  			background-color="black"
+  			color="white"
+  			padding="5"
+  			margin="5">
     <xsl:if test="@dir">
       <xsl:attribute name="direction">
         <xsl:choose>
@@ -259,6 +286,7 @@ xmlns:fo="http://www.w3.org/1999/XSL/Format"
   </xsl:param>
 
   <fo:inline font-style="italic">
+  <!--<fo:inline font-family="SimHei">-->
     <xsl:call-template name="anchor"/>
     <xsl:if test="@dir">
       <xsl:attribute name="direction">
@@ -442,7 +470,7 @@ xmlns:fo="http://www.w3.org/1999/XSL/Format"
 </xsl:template>
 
 <xsl:template match="d:command">
-  <xsl:call-template name="inline.boldseq"/>
+  <xsl:call-template name="inline.cmdseq"/>
 </xsl:template>
 
 <xsl:template match="d:computeroutput">
