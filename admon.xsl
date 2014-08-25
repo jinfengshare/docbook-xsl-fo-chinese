@@ -110,6 +110,7 @@ xmlns:fo="http://www.w3.org/1999/XSL/Format"
     <xsl:if test="$admon.textlabel != 0 or d:title or d:info/d:title">
       <fo:block keep-with-next.within-column='always'
                 xsl:use-attribute-sets="admonition.title.properties">
+         <xsl:attribute name="background-color">#d0d0d0</xsl:attribute>
          <xsl:apply-templates select="." mode="object.title.markup">
 	   <xsl:with-param name="allow-anchors" select="1"/>
 	 </xsl:apply-templates>
